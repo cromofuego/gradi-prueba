@@ -4,6 +4,7 @@
 2. [Llamado a la API](#Llamado-a-la-API)
 3. [Estilos](#Estilos)
 4. [Componentes](#Componentes)
+5. [Funciones](#Funciones)
 
 # Instalar y correr la aplicación
 
@@ -85,3 +86,6 @@ Se hizo uso del preprocesador SASS, para tener centralizado los estilos en una a
 2. Se hace un dispatch de redux de la función `fetchAllProducts()` para traer la información del producto.
 
 3. La función `handleClick()` es la que permite a través de un dispatch de `setCart()` actualizar la información del `Cart` de redux y mostrarla al usuario.
+
+# Funciones
+En la carpeta `helpers` hay una función llamada priceWithDot, que recibe el precio y le agrega el punto al precio en USD.
