@@ -1,0 +1,82 @@
+.modal {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 1rem;
+	display: none;
+	border: 1px solid $color-light-gray;
+	position: relative;
+	height: 25rem;
+	width: 28rem;
+	left: 50%;
+	position: fixed;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 40;
+	background: $color-white;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	.close-modal {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.close-modal > button {
+		cursor: pointer;
+		background: transparent;
+		outline: none;
+		position: absolute;
+		top: 2%;
+		right: 2%;
+		padding: 0.2rem 1rem;
+		border-radius: 1rem;
+		border: 1px solid $color-light-gray;
+		font-weight: bold;
+		font-size: 2rem;
+	}
+	.close-modal > button:active {
+		background: #f8f6f7;
+	}
+
+	.info-color-size,
+	.info-amount-price {
+		width: 100%;
+		justify-content: space-around;
+		display: flex;
+		align-items: center;
+	}
+	.info-color-size > p,
+	.info-amount-price > p {
+		font-size: 1.4rem;
+	}
+	.info-color-size > p:nth-child(2),
+	.info-amount-price > p:nth-child(2) {
+		margin-left: 1rem;
+	}
+}
+
+.modal > h4 {
+	margin: 0;
+	font-size: 2.4rem;
+}
+
+.modal > p {
+	margin: 0;
+	font-size: 1.4rem;
+}
+.modal > button {
+	height: 5.5rem;
+	width: 100%;
+	outline: none;
+	border: none;
+	font-size: 2rem;
+	background-color: #efefef;
+}
+
+.modal > button:active {
+	background-color: rgba(176, 168, 168, 0.8);
+}
+
+.show {
+	display: flex;
+}

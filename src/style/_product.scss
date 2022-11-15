@@ -1,0 +1,102 @@
+.content-product {
+	margin: 0 auto;
+	max-width: 53rem;
+	.header-product {
+		padding: 0 2rem;
+		.name-product {
+			font-size: 2.4rem;
+			margin-top: 0.5rem;
+			margin-bottom: 0.8rem;
+		}
+		.brand {
+			font-size: 1.4rem;
+			margin: 0 0;
+			color: $color-light-gray;
+		}
+		.container-prices {
+			font-size: 2.4rem;
+			display: flex;
+			.compare-price {
+				font-size: 2rem;
+				color: $color-light-gray;
+				text-decoration: line-through;
+			}
+		}
+		.container-prices > p {
+			margin: 0 0;
+		}
+		.container-prices > p:nth-child(2) {
+			margin-left: 1rem;
+		}
+	}
+}
+
+.container-li-size {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container-li-color {
+	display: flex;
+	align-items: center;
+}
+
+.add-favourite-and-cart {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.add-favourite-and-cart > button {
+	padding: 1.5rem 0;
+	font-size: 2rem;
+	margin: 1rem 2rem;
+	width: 94%;
+	height: 5.5rem;
+	outline: none;
+	border: none;
+}
+
+.add-favourite-and-cart > button:nth-child(2) {
+	cursor: pointer;
+	background-color: $color-black;
+	color: $color-white;
+}
+.add-favourite-and-cart > button:nth-child(1):active {
+	background-color: rgba(176, 168, 168, 0.8);
+}
+.add-favourite-and-cart > button:nth-child(2):active {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container-description > p {
+	color: rgba(153, 153, 153, 1);
+	font-size: $font-paragraph;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+
+@media (min-width: 650px) {
+	article {
+		display: flex;
+	}
+	.content-product {
+		margin-top: 1.6rem;
+		max-width: 32rem;
+	}
+}
+
+@media (min-width: 1000px) {
+	article {
+		display: flex;
+	}
+	.content-product {
+		margin-top: 1.6rem;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		max-width: 60rem;
+		width: 100%;
+	}
+}

@@ -1,0 +1,51 @@
+article > .content-product .ul-color {
+	border-top: 1px solid $color-light-gray;
+	margin: 0 2rem;
+	font-size: $font-paragraph;
+	padding-left: 0;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	.li-select-color {
+		position: relative;
+		height: 5rem;
+		width: 5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 1rem;
+	}
+}
+.li-select-color > input[type="radio"] {
+	cursor: pointer;
+	opacity: 0;
+	border: none;
+	margin: 0;
+	height: 4rem;
+	width: 4rem;
+	accent-color: $color-black;
+}
+
+.li-select-color > input[type="radio"]:checked {
+	opacity: 1;
+	border: $color-black;
+}
+
+.li-select-color > label > span {
+	cursor: pointer;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 2.4rem;
+	width: 2.4rem;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.li-select-color > label > span.color-red {
+	background-color: red;
+}
+
+.li-select-color > label > span.color-black {
+	background-color: $color-black;
+}

@@ -1,0 +1,36 @@
+article > .content-product .ul-size {
+	border-top: 1px solid $color-light-gray;
+	border-bottom: 1px solid $color-light-gray;
+	margin: 0 2rem;
+	font-size: $font-paragraph;
+	padding-left: 0;
+	display: flex;
+	list-style: none;
+	.li-select-size > input {
+		display: none;
+	}
+	.li-select-size > label {
+		cursor: pointer;
+		display: flex;
+		width: inherit;
+		height: inherit;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.li-select-size {
+		color: $color-light-gray;
+		height: 4rem;
+		width: 4rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid;
+		margin: 1rem;
+		font-size: $font-paragraph;
+	}
+
+	.size-active {
+		color: $color-black;
+	}
+}

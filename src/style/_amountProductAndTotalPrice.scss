@@ -1,0 +1,47 @@
+.container-total-products {
+	margin: 2rem;
+	display: flex;
+	justify-content: space-between;
+	.input-buttons {
+		width: 100%;
+		max-width: 12rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid $color-light-gray;
+	}
+	.input-buttons > input {
+		font-weight: bold;
+		font-size: $font-paragraph;
+		padding: 0 1rem;
+		outline: none;
+		border: none;
+		height: 90%;
+		width: 50%;
+		width: 2rem;
+		text-align: center;
+	}
+	.input-buttons > button {
+		cursor: pointer;
+		padding: 0;
+		font-size: 2.5rem;
+		width: 50%;
+		height: 100%;
+		outline: none;
+		background: transparent;
+		border: none;
+	}
+	.input-buttons > button:active {
+		background: rgba(153, 153, 153, 0.15);
+	}
+}
+
+.container-total-products > p {
+	color: $color-light-gray;
+	font-size: $font-paragraph;
+}
+
+.container-total-products > p > span {
+	color: $color-black;
+	font-weight: bold;
+}
