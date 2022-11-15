@@ -4,17 +4,24 @@
 2. [Llamado a la API](#Llamado-a-la-API)
 3. [Estilos](#Estilos)
 4. [Componentes](#Componentes)
+5. [Funciones](#Funciones)
 
 # Instalar y correr la aplicación
 
 #### Clonar repositorio
 
-1. En vas la consola te ubicas en la carpeta que quieres hacer el clon, corriento este comando en la consola `$ git clone url...`.
-2. Luego se mueve hacia la carpeta que se acaba de crear `$ cd nameFile `.
+1. En la consola te ubicas en la carpeta que quieres hacer el clon, corriento este comando `$ git clone url`, la url puede ser de HTTPS o HSS.
+- url (HTTPS): https://github.com/cromofuego/gradi-prueba.git.
+- url (HSS): git@github.com:cromofuego/gradi-prueba.git.
+
+Asi en consola al usar el comando copias y pegas en url la que prefieras.
+
+2. Luego se mueve hacia la carpeta que se acaba de crear `$ cd gradi-prueba/
+ `
 
 #### Instalar dependencias Frontend (React)
 
-1. Una vez estes en la carpeta que se clonó se deben instalar todas las dependencia con el siguiente comando `$ npm install` o según su instalador de dependencias, vale aclara que se uso la versión v14.21.1 de node.js para este proyecto.
+1. Una vez estes en la carpeta que se clonó se deben instalar todas las dependencia con el siguiente comando `$ npm install` o según su instalador de dependencias, vale aclara que se uso la versión 14.21.1 de node.js para este proyecto.
 
 2. Finalizada la instalación de todas las dependencias, puede iniciar el proyecto con `$ npm start`. Y en el http://localhost:3000/ la aplicación de React estará funcionando.
 
@@ -79,3 +86,6 @@ Se hizo uso del preprocesador SASS, para tener centralizado los estilos en una a
 2. Se hace un dispatch de redux de la función `fetchAllProducts()` para traer la información del producto.
 
 3. La función `handleClick()` es la que permite a través de un dispatch de `setCart()` actualizar la información del `Cart` de redux y mostrarla al usuario.
+
+# Funciones
+En la carpeta `helpers` hay una función llamada `priceWithDot()`, que recibe el precio y le agrega el punto al precio en USD.
