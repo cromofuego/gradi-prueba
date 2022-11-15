@@ -88,4 +88,4 @@ Se hizo uso del preprocesador SASS, para tener centralizado los estilos en una a
 3. La función `handleClick()` es la que permite a través de un dispatch de `setCart()` actualizar la información del `Cart` de redux y mostrarla al usuario.
 
 # Funciones
-En la carpeta `helpers` hay una función llamada priceWithDot, que recibe el precio y le agrega el punto al precio en USD.
+En la carpeta `helpers` hay una función llamada `priceWithDot()`, que recibe el precio y le agrega el punto al precio en USD.
