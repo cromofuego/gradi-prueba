@@ -40,7 +40,6 @@ const Carousel = ({ images }) => {
 	};
 
 	const seeCurrentImage = (indexCurrentImage) =>
-		// Retorna la posicion actual de la imagen rellenando un span de color o no según la imagen actual
 		images.map(
 			(image, index) =>
 				image && (
